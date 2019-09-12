@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿京东</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <meta name="description"
+          content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"/>
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东"/>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <script type="text/javascript" src="JS/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="JS/index.js"></script>
+</head>
+<body>
+    <div id="top_nav">
+        <div id="top_left_nav">
+            <div id="dq">
+                <img src="images/location.png" alt=""><span id="district">广东</span>
+            </div>
+            <div id="location">
+                <ul>
+                    <li>北京</li><li>上海</li><li>天津</li><li>重庆</li><li>河北</li>
+                    <li>山西</li><li>河南</li><li>辽宁</li><li>吉林</li><li>黑龙江</li>
+                    <li>浙江</li><li>江苏</li><li>山东</li><li>安徽</li><li>内蒙古</li>
+                    <li>福建</li><li>湖北</li><li>湖南</li><li class="select">广东</li><li>广西</li>
+                    <li>江西</li><li>四川</li><li>海南</li><li>贵州</li><li>云南</li>
+                    <li>西藏</li><li>陕西</li><li>甘肃</li><li>青海</li><li>宁夏</li>
+                    <li>新疆</li><li>港澳</li><li>台湾</li><li>海外</li><li>钓鱼岛</li>
+                </ul>
+            </div>
+        </div>
+        <div id="top_right_nav">
+            <span>手机京东</span>
+            <span>网站导航</span>
+            <span>客户服务</span>
+            <span>企业采购</span>
+            <span>京东会员</span>
+            <span>我的京东</span>
+            <span>我的订单</span>
+            <span><a href="#">请登录</a>   <a href="#">免费注册</a></span>
+        </div>
+    </div>
+
+<!--隐藏搜索栏    分割线-->
+    <div id="hide">
+        <div class="hide_box">
+            <div class="logo2">
+                <a href="#">
+                    <img src="images/logo2.png">
+                </a>
+            </div>
+            <div class="hide_search_box">
+                <input type="search" id="hide_search" placeholder="输入关键字">
+                <button><img src="images/search.png"></button>
+                <div id="hide_spc">
+                    <img src="images/shopping_cart.png">
+                    <span>我的购物车</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--页首        分割线-->
+    <header>
+        <div class="main_menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <input type="search" id="search" placeholder="输入关键字">
+                <button><img src="images/search.png"></button>
+                <div id="spc">
+                    <img src="images/shopping_cart.png">
+                    <span>我的购物车</span>
+                </div>
+                <div class="keys">
+                    <a href="#" class="vip">食品中秋季</a>
+                    <a href="#">运动户外</a>
+                    <a href="#">华帝巅峰</a>
+                    <a href="#">金秋献礼</a>
+                    <a href="#">电脑数码</a>
+                    <a href="#">中秋送礼</a>
+                    <a href="#">手机优惠</a>
+                    <a href="#">159减50</a>
+                    <a href="#">钢笔礼盒</a>
+                </div>
+                <div class="sort">
+                    <a href="#" class="svip">秒杀</a>
+                    <a href="#" class="svip">优惠券</a>
+                    <a href="#">PLUS会员</a>
+                    <a href="#">品牌闪购</a>
+                    <a href="#">拍卖</a>
+                    <a href="#">京东时尚</a>
+                    <a href="#">京东超市</a>
+                    <a href="#">京东生鲜</a>
+                    <a href="#">海囤全球</a>
+                    <a href="#">京东金融</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--主要导航    分割线-->
+    <div class="center">
+        <aside id="side_nav">
+            <ul>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">手机</a> / <a href="#">运营商</a> / <a href="#">数码</a></li>
+                <li><a href="#">电脑</a> / <a href="#">办公</a></li>
+                <li><a href="#">家居</a> / <a href="#">家具</a> / <a href="#">家装</a> / <a href="#">厨具</a></li>
+                <li><a href="#">男装</a> / <a href="#">女装</a> / <a href="#">童装</a> / <a href="#">内衣</a></li>
+                <li><a href="#">美妆</a> / <a href="#">个护清洁</a> / <a href="#">宠物</a></li>
+                <li><a href="#">女鞋</a> / <a href="#">箱包</a> / <a href="#">钟表</a> / <a href="#">珠宝</a></li>
+                <li><a href="#">男鞋</a> / <a href="#">运动</a> / <a href="#">户外</a></li>
+                <li><a href="#">房产</a> / <a href="#">汽车</a> / <a href="#">汽车用品</a></li>
+                <li><a href="#">母婴</a> / <a href="#">玩具乐器</a></li>
+                <li><a href="#">食品</a> / <a href="#">酒类</a> / <a href="#">生鲜</a> / <a href="#">特产</a></li>
+                <li><a href="#">艺术</a> / <a href="#">礼品鲜花</a> / <a href="#">农资绿植</a></li>
+                <li><a href="#">医药保健</a> / <a href="#">计生情趣</a></li>
+                <li><a href="#">图书</a> / <a href="#">文娱</a> / <a href="#">电子书</a></li>
+                <li><a href="#">机票</a> / <a href="#">酒店</a> / <a href="#">旅游</a> / <a href="#">生活</a></li>
+                <li><a href="#">理财</a> / <a href="#">众筹</a> / <a href="#">白条</a> / <a href="#">保险</a></li>
+                <li><a href="#">安装</a> / <a href="#">维修</a> / <a href="#">清洗</a> / <a href="#">二手</a></li>
+                <li><a href="#">工业品</a></li>
+            </ul>
+        </aside>
+        <div id="side_menu">
+            <ul class="visible">
+                <li>分类<span>1</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>2</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>3</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>4</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>5</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>6</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>7</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>8</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>9</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>10</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>11</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>12</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>13</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>14</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>15</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>16</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>17</span></li>
+            </ul>
+            <ul>
+                <li>分类<span>18</span></li>
+            </ul>
+        </div>
+        <!--        侧边导航弹出菜单-->
+
+<!--        轮播图部分-->
+        <div id="big_img">
+            <ul>
+                <li style="z-index: 1;"><img src="images/focus_img/1.webp"></li>
+                <li><img src="images/focus_img/2.webp"></li>
+                <li><img src="images/focus_img/3.webp"></li>
+                <li><img src="images/focus_img/4.webp"></li>
+                <li><img src="images/focus_img/5.webp"></li>
+                <li><img src="images/focus_img/6.webp"></li>
+                <li><img src="images/focus_img/7.webp"></li>
+                <li><img src="images/focus_img/8.webp"></li>
+            </ul>
+<!--            左右切换按钮-->
+            <a href="javascript:;" id="b_btn_l"></a>
+            <a href="javascript:;" id="b_btn_r"></a>
+<!--            小圆点-->
+            <div id="circle">
+                <span class="current"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div id="sml_img">
+            <hgroup style="z-index: 1;">
+                <ul>
+                    <li class="sml_img_t"><img src="images/recommend_img/1.webp"></li>
+                    <li class="sml_img_m"><img src="images/recommend_img/2.webp"></li>
+                    <li class="sml_img_f"><img src="images/recommend_img/3.webp"></li>
+                </ul>
+            </hgroup>
+            <hgroup>
+                <ul>
+                    <li class="sml_img_t"><img src="images/recommend_img/4.webp"></li>
+                    <li class="sml_img_m"><img src="images/recommend_img/5.webp"></li>
+                    <li class="sml_img_f"><img src="images/recommend_img/6.webp"></li>
+                </ul>
+            </hgroup>
+            <a href="javascript:;" id="s_btn_l"></a>
+            <a href="javascript:;" id="s_btn_r"></a>
+        </div>
+
+<!--        分割线-->
+        <div id="right_nav">
+            <hgroup class="personal">
+                <div class="head_photo">
+                    <a href="#">
+                        <img src="images/login.png">
+                    </a>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li>Hi~欢迎逛京东</li>
+                        <li>登录</li><li>|</li><li>注册</li>
+                    </ul>
+                </div>
+                <div class="vip">
+                    <span>新人福利</span>
+                    <span>PLUS会员</span>
+                </div>
+            </hgroup>
+            <hr>
+            <hgroup class="news">
+                <h3>京东快报</h3>
+                <a href="#" class="more">更多 ></a>
+                <div class="box_news">
+                    <a href="#" class="currency"><span class="hot">推荐</span>华为鸿蒙系统，操作方式类似iOS 13，花粉们都尖叫了</a>
+                    <a href="#" class="currency"><span class="hot">热门</span>iPhoneSE2概念图：屏下指纹识别</a>
+                    <a href="#" class="currency"><span class="hot">最新</span>华为有新动作！麒麟980+8GB+性价比，用户不淡定了</a>
+                    <a href="#" class="currency"><span class="hot">热议</span>米粉乐了！续航120公里的小米电动车上市！价格便宜！</a>
+                </div>
+            </hgroup>
+            <hr>
+            <hgroup id="ico_nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/1a.png">
+                            <span>话费</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/2a.png">
+                            <span>机票</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/3a.png">
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/4a.png">
+                            <span>游戏</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/5a.png">
+                            <span>加油卡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/6a.png">
+                            <span>火车票</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/7a.png">
+                            <span>众筹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/8a.png">
+                            <span>理财</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/9a.png">
+                            <span>白条</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/10a.png">
+                            <span>电影票</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/11a.png">
+                            <span>企业购</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/service_ico_img/12a.png">
+                            <span>礼品卡</span>
+                        </a>
+                    </li>
+                </ul>
+            </hgroup>
+        </div>
+    </div>
+
+<!--发现好货    分割线-->
+    <div id="nice_goods">
+        <a href="javascript:;" class="nice_goods_logo">
+            <div>
+                探索新生活
+            </div>
+        </a>
+        <div id="nice_goods_box">
+            <div id="nice_goods_li">
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/1.webp">
+                    <span>梵卡奇 水晶 白酒杯</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>迪士尼儿童滑板车</span>
+                    <img src="images/goods_img/2.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/3.webp">
+                    <span>YSL豆沙色唇釉</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>星特朗寻星天文镜</span>
+                    <img src="images/goods_img/4.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/5.webp">
+                    <span>香奈儿山茶花套装</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>toorune色水润口红</span>
+                    <img src="images/goods_img/6.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/7.webp">
+                    <span>SKG 遥控版 颈椎按摩器</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>霍尼韦尔防霾口罩</span>
+                    <img src="images/goods_img/8.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/9.webp">
+                    <span>黑街多功能变形轮滑鞋</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>法国 DIOR 魅惑唇蜜</span>
+                    <img src="images/goods_img/10.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/1.webp">
+                    <span>梵卡奇 水晶 白酒杯</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>迪士尼儿童滑板车</span>
+                    <img src="images/goods_img/2.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/3.webp">
+                    <span>YSL豆沙色唇釉</span>
+                </a>
+                <a href="javascript:;" class="goods_bottom">
+                    <span>星特朗寻星天文镜</span>
+                    <img src="images/goods_img/4.webp">
+                </a>
+                <a href="javascript:;" class="goods_top">
+                    <img src="images/goods_img/5.webp">
+                    <span>香奈儿山茶花套装</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!--右边导航    分割线-->
+    <div id="elevator">
+        <ul>
+            <li>发现<br>好货</li>
+            <hr>
+            <li>频道<br>广场</li>
+            <hr>
+            <li>为你<br>推荐</li>
+            <hr>
+            <li>客服</li>
+            <hr>
+            <li>反馈</li>
+            <hr>
+            <li id="return_top">返回<br>顶部</li>
+        </ul>
+    </div>
+
+<!--频道广场    分割线-->
+    <div class="channel">
+        <h1>频道广场</h1>
+    </div>
+    <div id="channel_nav">
+        <div class="chanel_nav_big">
+            <a href="javascript:;">
+                <img src="images/channels_img/1.webp">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_big">
+            <a href="javascript:;">
+                <img src="images/channels_img/2.webp">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/3.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/4.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/5.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/6.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/7.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/8.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/9.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/10.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/11.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/12.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/13.png">
+                <span></span>
+            </a>
+        </div>
+        <div class="chanel_nav_sml">
+            <a href="javascript:;">
+                <img src="images/channels_img/14.png">
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+<!--为你推荐    分割线-->
+    <div class="recommend">
+        <h1>为你推荐</h1>
+    </div>
+    <div id="recommend_li">
+        <ul id="recommend_ul">
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/1.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/2.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/3.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/4.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/5.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/6.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/7.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/8.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/9.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/10.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/11.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/12.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/13.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/14.png">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/lazyimg_img/15.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+<!--  页脚     分割线-->
+    <footer>
+        <div class="footer_top">
+            <ul>
+                <li>
+                    <h2>多</h2>
+                    <p>品类齐全，轻松购物</p>
+                </li>
+                <li>
+                    <h2>快</h2>
+                    <p>多仓直发，极速配送</p>
+                </li>
+                <li>
+                    <h2>好</h2>
+                    <p>正品行货，精致服务</p>
+                </li>
+                <li>
+                    <h2>省</h2>
+                    <p>天天低价，畅选无忧</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer_middle">
+            <div>
+                <h3>购物指南</h3>
+                <ul>
+                    <li><a href="javascript:;">购物流程</a></li>
+                    <li><a href="javascript:;">会员介绍</a></li>
+                    <li><a href="javascript:;">生活旅行</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">大家电</a></li>
+                    <li><a href="javascript:;">联系客服</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>配送方式</h3>
+                <ul>
+                    <li><a href="javascript:;">上门自提</a></li>
+                    <li><a href="javascript:;">211限时达</a></li>
+                    <li><a href="javascript:;">配送服务查询</a></li>
+                    <li><a href="javascript:;">配送费收取标准</a></li>
+                    <li><a href="javascript:;">海外配送</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>支付方式</h3>
+                <ul>
+                    <li><a href="javascript:;">货到付款</a></li>
+                    <li><a href="javascript:;">在线支付</a></li>
+                    <li><a href="javascript:;">分期付款</a></li>
+                    <li><a href="javascript:;">邮局汇款</a></li>
+                    <li><a href="javascript:;">公司转账</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>售后服务</h3>
+                <ul>
+                    <li><a href="javascript:;">售后政策</a></li>
+                    <li><a href="javascript:;">价格保护</a></li>
+                    <li><a href="javascript:;">退款说明</a></li>
+                    <li><a href="javascript:;">返修/退换货</a></li>
+                    <li><a href="javascript:;">取消订单</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>特色服务</h3>
+                <ul>
+                    <li><a href="javascript:;">夺宝岛</a></li>
+                    <li><a href="javascript:;">DIY装机</a></li>
+                    <li><a href="javascript:;">延保服务</a></li>
+                    <li><a href="javascript:;">京东E卡</a></li>
+                    <li><a href="javascript:;">京东通信</a></li>
+                    <li><a href="javascript:;">京鱼座智能</a></li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="footer_ft">
+            <p>
+                <a href="javascript:;">关于我们</a>
+                <span>|</span>
+                <a href="javascript:;">联系我们</a>
+                <span>|</span>
+                <a href="javascript:;">联系客服</a>
+                <span>|</span>
+                <a href="javascript:;">合作招商</a>
+                <span>|</span>
+                <a href="javascript:;">商家帮助</a>
+                <span>|</span>
+                <a href="javascript:;">营销中心</a>
+                <span>|</span>
+                <a href="javascript:;">手机京东</a>
+                <span>|</span>
+                <a href="javascript:;">友情链接</a>
+                <span>|</span>
+                <a href="javascript:;">销售联盟</a>
+                <span>|</span>
+                <a href="javascript:;">京东社区</a>
+                <span>|</span>
+                <a href="javascript:;">风险监测</a>
+                <span>|</span>
+                <a href="javascript:;">隐私政策</a>
+                <span>|</span>
+                <a href="javascript:;">京东公益</a>
+                <span>|</span>
+                <a href="javascript:;">English Site</a>
+                <span>|</span>
+                <a href="javascript:;">Media & IR</a>
+            </p>
+            <div>
+                <p>
+                    <a href="javascript:;">京公网安备</a>
+                    <span>|</span>
+                    <span>京ICP证070359号</span>
+                    <span>|</span>
+                    <a href="javascript:;">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                    <span>|</span>
+                    <span>新出发京零&nbsp字第大120007号</span>
+                </p>
+                <p>
+                    <span>互联网出版许可证编号新出网证(京)字150号</span>
+                    <span>|</span>
+                    <a href="javascript:;">出版物经营许可证</a>
+                    <span>|</span>
+                    <a href="javascript:;">网络文化经营许可证京网文[2014]2148-348号</a>
+                    <span>|</span>
+                    <span>违法和不良信息举报电话：4006561155</span>
+                </p>
+                <p>
+                    <span>仿京东</span>
+                    <span>|</span>
+                    <span>消费者维权热线：4006067733</span>
+                    <span>|</span>
+                    <a href="javascript:;">经营证照</a>
+                    <span>|</span>
+                    <span>(京)网械平台备字(2018)第00003号</span>
+                    <span>|</span>
+                    <a href="javascript:;">营业执照</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
